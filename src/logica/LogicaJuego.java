@@ -1,3 +1,5 @@
+package logica;
+
 public class LogicaJuego {
     private String[][] tablero;
     private boolean turnoX; // true = X, false = O
