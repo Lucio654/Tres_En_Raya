@@ -93,7 +93,7 @@ public class InterfazGrafica extends JFrame implements ActionListener {
         
         // Cambiar color según el símbolo
         if (simbolo.equals("X")) {
-            botones[fila][columna].setForeground(Color.BLUE);
+            botones[fila][columna].setForeground(Color.GREEN);
         } else {
             botones[fila][columna].setForeground(Color.RED);
         }
@@ -113,10 +113,6 @@ public class InterfazGrafica extends JFrame implements ActionListener {
         actualizarLabelTurno();
     }
     
-    /*private void reiniciarJuego() {
-        juego.limpiarTablero();
-        actualizarInterfaz();
-    }*/
     
     private void mostrarMensajeGanador() {
         String ganador = juego.getJugadorActual();
