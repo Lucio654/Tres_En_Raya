@@ -15,9 +15,9 @@ public class InterfazGrafica extends JFrame implements ActionListener {
         juego = new LogicaJuego();
         
         // Configurar ventana
-        setTitle("3 en Raya");
+        setTitle("3 EN RAYA");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 350);
+        setSize(400, 450);
         setLocationRelativeTo(null);
         
         // Crear componentes
@@ -49,10 +49,6 @@ public class InterfazGrafica extends JFrame implements ActionListener {
         }
         add(panelTablero, BorderLayout.CENTER);
         
-        // Botón de reinicio
-        JButton botonReiniciar = new JButton("Reiniciar Juego");
-        botonReiniciar.addActionListener(e -> reiniciarJuego());
-        add(botonReiniciar, BorderLayout.SOUTH);
     }
     
     @Override
@@ -117,10 +113,10 @@ public class InterfazGrafica extends JFrame implements ActionListener {
         actualizarLabelTurno();
     }
     
-    private void reiniciarJuego() {
+    /*private void reiniciarJuego() {
         juego.limpiarTablero();
         actualizarInterfaz();
-    }
+    }*/
     
     private void mostrarMensajeGanador() {
         String ganador = juego.getJugadorActual();

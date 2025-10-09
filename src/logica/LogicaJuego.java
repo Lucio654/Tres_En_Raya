@@ -86,7 +86,7 @@ public class LogicaJuego {
         return true; // Tablero lleno
     }
     
-    // Getters
+    
     public boolean esTurnoX() {
         return turnoX;
     }
